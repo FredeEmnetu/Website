@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showtimes</title>
+    <!-- --------------- Styles -------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <!-- --------------- Scripts -------------- -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="./showtimes.js"></script>
+</head>
+<body>
+    <section class="hero is-danger">
+        <div class="hero-body">
+        <p class="title">
+            Showtimes
+        </p>
+        <p class="subtitle">
+            Give me something to do
+        </p>
+        </div>
+    </section>
+    <div id="container">
+        <div class="columns has-text-centered">
+            <div class="column" id="times">
+                <div class="field is-horizontal rightForm">
+                    <label class="label">Location: </label>
+                    <div class="control">
+                      <div class="select">
+                        <select id="locationID">
+                          <option>Oshawa Cinemas</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                    
+                <div class="field is-horizontal control">
+                    <div class="field-label">
+                            <label class="label" id="date">Date:</label>
+                    </div>
+                    <div class="field-body">
+                        <input type="date" id="dateID">
+                    </div>
+                </div>
+                <button class="button is-danger" id="submit">Submit</button>
+                <div id="DynamicShowtimes">
+                </div>
+            </div>
+            <div class="column">
+                <div id="ShowtimeContainer">
+                    <div class="posterContainer">
+                        <img id="poster" alt="pic">
+                    </div>
+                    <div>
+                        <div class="field is-horizontal control">
+                            <div class="field-label">
+                                    <label class="label"> Title:</label>
+                            </div>
+                            <div class="field-body">
+                                <p class="input" name="genre" id="title">
+                            </div>
+                        </div>
+                            
+                        <div class="field is-horizontal control">
+                            <div class="field-label">
+                                    <label class="label">Year:</label>
+                            </div>
+                            <div class="field-body">
+                                <p class="input" name="Year"  id="year">
+                            </div>
+                        </div>
+                        <div class="field is-horizontal control">
+                            <div class="field-label">
+                                    <label class="label">Runtime:</label>
+                            </div>
+                                <div class="field-body">
+                                    <p class="input" name="genre" id="runtime" >
+                                </div>
+                        </div>
+                        <div class="field is-horizontal control">
+                            <div class="field-label">
+                                    <label class="label">Director:</label>
+                            </div>
+                            <div class="field-body">
+                                <p class="input" name="genre" id="director">
+                            </div>
+                        </div>
+                        <div class="field is-horizontal control">
+                            <div class="field-label">
+                                    <label class="label">Writer:</label>
+                            </div>
+                            <div class="field-body">
+                                <p class="input" name="genre" id="writer">
+                            </div>
+                        </div>
+                        <div class="field is-horizontal control">
+                            <div class="field-label">
+                                    <label class="label">Actors:</label>
+                            </div>
+                            <div class="field-body">
+                                <p class="input TextArea" name="genre" id="actor" >
+                            </div>
+                        </div>
+                        <div class="field is-horizontal control">
+                            <div class="field-label">
+                                    <label class="label">Plot:</label>
+                            </div>
+                            <div class="field-body">
+                                <p class="input TextArea" name="genre" id="plot">
+                            </div>
+                        </div>
+                        <div class="field is-horizontal control">
+                            <div class="field-label">
+                                    <label class="label">Ratings:</label>
+                            </div>
+                            <div class="field-body" id="rating">
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+          </div>
+         
+    </div>
+       
+</body>
+</html>
